@@ -38,6 +38,9 @@ var app = new Vue({
                 this.channels = newArr.length > 0 ? newArr : [['','']];
             }
         },
+        importM3U: function () {
+            document.getElementById('importm3u').click();
+        },
         make: function () {
             this.result = '#EXTM3U\n';
             for (let item in this.channels) {

@@ -33,8 +33,8 @@
                 </div>
                 <div class="row my-3">
                     <div class="col-6">
-                        <input type="button" class="btn btn-primary w-100" value="Import M3U" />
-                        <input type="file" id="importm3u" style="font-size: 100px; position: absolute; left: 0; top: 0; opacity: 0;">
+                        <input type="button" class="btn btn-primary w-100" value="Import M3U" @click="importM3U()"/>
+                        <input type="file" id="importm3u" class="d-none">
                     </div>
                     <div class="col-6">
                         <input type="submit" class="btn btn-success w-100" value="Make M3U" />
